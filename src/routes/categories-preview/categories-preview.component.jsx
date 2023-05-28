@@ -4,9 +4,10 @@ import { CategoriesContext } from "../../contexts/categories.context";
 import "./categories-preview.styles.scss";
 
 
-const CategoriesPreview=()=>{
 
-    const {categoriesMap}=useContext(CategoriesContext);
+const CategoriesPreview=()=>{
+    
+    const {categoriesMap}=useContext(CategoriesContext);   
     return (
         <div className="categories-preview-container">
 {
