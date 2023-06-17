@@ -66,7 +66,6 @@ export const auth=getAuth();
 export const creatUserDocumentFromAuth= async (userAuth,additionalInformation={displayName:"mark"})=>{
   console.log(userAuth);
   const userDocRef=doc(db,'users',userAuth.uid);
-  //console.log(userDocRef);
   const userSnapshot=await getDoc(userDocRef);
   console.log(userSnapshot);
 if(!userSnapshot.exists()){
