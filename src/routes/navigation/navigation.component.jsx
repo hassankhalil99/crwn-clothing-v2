@@ -1,5 +1,5 @@
 import { Fragment, useContext } from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet} from 'react-router-dom';
 import { ReactComponent as CrwnLogo } from "../../assets/crown.svg";
 import {NavigationContainer,LogoContainer,NavLinks,NavLink } from './navigation.styles';
 import { UserContext } from '../../contexts/user.context';
@@ -25,7 +25,7 @@ const Navigation = () => {
           <NavLink  to='/shop'>
             SHOP
           </NavLink>          
-          {currentUSer?(<NavLink as="span" onClick={signOutHandler}>Sign Out</NavLink>)            
+          {currentUSer?(<NavLink as="span" onClick={signOutHandler}>Sign OUT</NavLink>)            
           :
           (<NavLink
            to='/auth'>
