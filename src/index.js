@@ -7,21 +7,24 @@ import reportWebVitals from './reportWebVitals';
 import { UserProvider } from './contexts/user.context';
 import { CartProvider } from './contexts/cart.context';
 import { CategoriesProvider } from './contexts/categories.context';
-
+import {Provider} from 'react-redux'
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-     <BrowserRouter>
-      <UserProvider>
-        <CategoriesProvider>
-          <CartProvider>
-            <App /> 
-          </CartProvider>                
-        </CategoriesProvider>
-     </UserProvider>  
-     </BrowserRouter>
+    <Provider>
+      <BrowserRouter>
+        <UserProvider>
+          <CategoriesProvider>
+            <CartProvider>
+              <App /> 
+            </CartProvider>                
+          </CategoriesProvider>
+      </UserProvider>  
+      </BrowserRouter>
+    </Provider>
+     
   </React.StrictMode>,
  
   document.getElementById('root')
