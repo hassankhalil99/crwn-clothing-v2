@@ -1,0 +1,3 @@
+export const GATEGORIES_ACTION_TYPES = {
+    SET_CATEGORIES : 'category/SET_CATEGORY_MAP',
+}
